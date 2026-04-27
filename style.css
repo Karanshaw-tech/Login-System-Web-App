@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Lamp */
+.lamp-container {
+    text-align: center;
+}
+
+.bulb {
+    width: 80px;
+    height: 80px;
+    background: #333;
+    border-radius: 50%;
+    margin: 20px auto;
+    transition: all 0.5s ease;
+}
+
+.bulb.on {
+    background: #fff176;
+    box-shadow: 0 0 40px #fff176, 0 0 80px #ffeb3b;
+}
+
+/* Button */
+#toggleBtn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background: #ff9800;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Login Card */
+.login-card {
+    margin-top: 30px;
+    padding: 20px;
+    width: 300px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.login-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+input {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.login-btn {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background: #4caf50;
+    color: white;
+    border-radius: 5px;
+}
